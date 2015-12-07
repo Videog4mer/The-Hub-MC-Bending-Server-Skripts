@@ -1,0 +1,642 @@
+#Do not edit the contents of this or you will be punished!#
+#Skripts made by Jackson#
+#If you edit this, you will get told to fuck off :D#
+# © 2015 The Hub MC #
+variables:
+	balance.%player% = 0
+	
+on right click on sign:
+	if line 1 is "&1[Bendarena]":
+		message "&1Good Luck. You're going to need it &4>:D"
+		execute console command "warp bendarena %player%"
+on right click on sign:
+	if line 1 is "&6[Bendarena]":
+		message "&6Good Luck. You're going to need it &4>:D"
+		execute console command "warp bendarena %player%"
+on right click on sign:
+	if line 1 is "&7[Bendarena]":
+		message "&7Good Luck. You're going to need it &4>:D"
+		execute console command "warp BendarenaAir %player%"
+on right click on sign:
+	if line 1 is "&b[Bendarena]":
+		message "&bGood Luck. You're going to need it &4>:D"
+		execute console command "warp bendarenaWater %player%"
+on right click on sign:
+	if line 1 is "&a[Bendarena]":
+		message "&aGood Luck. You're going to need it &4>:D"
+		execute console command "warp bendarenaEarth %player%"
+on right click on sign:
+	if line 1 is "&c[Bendarena]":
+		message "&cGood Luck. You're going to need it &4>:D"
+		execute console command "warp bendarenaFire %player%"
+on right click on sign:
+	if line 1 is "&4[FFA 1]":
+		message "&4Welcome to the Free For All Arena. Also known as your grave!"
+		execute console command "warp FFA1 %player%"
+on right click on sign:
+	if line 1 is "&4[FFA 2]":
+		message "&4Welcome to the Free For All Arena. Also known as your grave!"
+		execute console command "warp FFA2 %player%"
+on right click on sign:
+	if line 1 is "&4[FFA 3]":
+		message "&4Welcome to the Free For All Arena. Also known as your grave!"
+		execute console command "warp FFA3 %player%"
+on right click on sign:
+	if line 1 is "&4[FFA 4]":
+		message "&4Welcome to the Free For All Arena. Also known as your grave!"
+		execute console command "warp FFA4 %player%"
+on right click on sign:
+	if line 1 is "&1[Bendarena 2]":
+		message "&1Good Luck. You're going to need it &4>:D"
+		execute console command "warp bendarena2 %player%"
+on right click on sign:
+	if line 1 is "&6[Bendarena 2]":
+		message "&6Good Luck. You're going to need it &4>:D"
+		execute console command "warp bendarena2Chi %player%"
+on right click on sign:
+	if line 1 is "&7[Bendarena 2]":
+		message "&7Good Luck. You're going to need it &4>:D"
+		execute console command "warp bendarena2Air %player%"
+on right click on sign:
+	if line 1 is "&b[Bendarena 2]":
+		message "&bGood Luck. You're going to need it &4>:D"
+		execute console command "warp bendarena2Water %player%"
+on right click on sign:
+	if line 1 is "&a[Bendarena 2]":
+		message "&aGood Luck. You're going to need it &4>:D"
+		execute console command "warp bendarena2Earth %player%"
+on right click on sign:
+	if line 1 is "&c[Bendarena 2]":
+		message "&cGood Luck. You're going to need it &4>:D"
+		execute console command "warp bendarena2Fire %player%"
+on break of sign:
+	if line 1 is "&1[Bendarena]":
+		if player has permission "warps.signs":
+			stop
+		else:
+			cancel event
+			message "&4You do not have suffecient permissions to break this sign!"
+on break of sign:
+	if line 1 is "&6[Bendarena]":
+		if player has permission "warps.signs":
+			stop
+		else:
+			cancel event
+			message "&4You do not have suffecient permissions to break this sign!"
+on break of sign:
+	if line 1 is "&7[Bendarena]":
+		if player has permission "warps.signs":
+			stop
+		else:
+			cancel event
+			message "&4You do not have suffecient permissions to break this sign!"
+on break of sign:
+	if line 1 is "&b[Bendarena]":
+		if player has permission "warps.signs":
+			stop
+		else:
+			cancel event
+			message "&4You do not have suffecient permissions to break this sign!"
+on break of sign:
+	if line 1 is "&a[Bendarena]":
+		if player has permission "warps.signs":
+			stop
+		else:
+			cancel event
+			message "&4You do not have suffecient permissions to break this sign!"
+on break of sign:
+	if line 1 is "&c[Bendarena]":
+		if player has permission "warps.signs":
+			stop
+		else:
+			cancel event
+			message "&4You do not have suffecient permissions to break this sign!"
+on break of sign:
+	if line 1 is "&4[FFA 1]":
+		if player has permission "warps.signs":
+			stop
+		else:
+			cancel event
+			message "&4You do not have suffecient permissions to break this sign!"
+on break of sign:
+	if line 1 is "&4[FFA 2]":
+		if player has permission "warps.signs":
+			stop
+		else:
+			cancel event
+			message "&4You do not have suffecient permissions to break this sign!"
+on break of sign:
+	if line 1 is "&4[FFA 3]":
+		if player has permission "warps.signs":
+			stop
+		else:
+			cancel event
+			message "&4You do not have suffecient permissions to break this sign!"
+on break of sign:
+	if line 1 is "&4[FFA 4]":
+		if player has permission "warps.signs":
+			stop
+		else:
+			cancel event
+			message "&4You do not have suffecient permissions to break this sign!"
+on break of sign:
+	if line 1 is "&1[Bendarena 2]":
+		if player has permission "warps.signs":
+			stop
+		else:
+			cancel event
+			message "&4You do not have suffecient permissions to break this sign!"
+on break of sign:
+	if line 1 is "&1[Bendarena 2]":
+		if player has permission "warps.signs":
+			stop
+		else:
+			cancel event
+			message "&4You do not have suffecient permissions to break this sign!"
+on break of sign:
+	if line 1 is "&6[Bendarena 2]":
+		if player has permission "warps.signs":
+			stop
+		else:
+			cancel event
+			message "&4You do not have suffecient permissions to break this sign!"
+on break of sign:
+	if line 1 is "&7[Bendarena 2]":
+		if player has permission "warps.signs":
+			stop
+		else:
+			cancel event
+			message "&4You do not have suffecient permissions to break this sign!"
+on break of sign:
+	if line 1 is "&b[Bendarena 2]":
+		if player has permission "warps.signs":
+			stop
+		else:
+			cancel event
+			message "&4You do not have suffecient permissions to break this sign!"
+on break of sign:
+	if line 1 is "&a[Bendarena 2]":
+		if player has permission "warps.signs":
+			stop
+		else:
+			cancel event
+			message "&4You do not have suffecient permissions to break this sign!"
+on break of sign:
+	if line 1 is "&c[Bendarena 2]":
+		if player has permission "warps.signs":
+			stop
+		else:
+			cancel event
+			message "&4You do not have suffecient permissions to break this sign!"
+on right click on a sign:
+	if line 1 is "Elite":
+		if player has permission "donationpoints.admin":
+			set line 1 of block to "&3[&7Donation Points&3]"
+			set line 2 of block to "&3Elite"
+			set line 3 of block to "&73000 Points"
+			set line 4 of block to "&fHave a nice day!"
+		else:
+			message "&3[&7Donation Points&3] &4You do not have permission to create a DonationPoints sign."
+on right click on sign:
+	if line 3 is "&73000 Points":
+		if player has permission "donationpoints.use":
+			if line 3 is "&73000 Points":
+				if {balance.%player%} is greater than or equal to 3000:
+					subtract 3000 from {balance.%player%}
+					execute console command "pex user %player% group set Elite"
+					message "&3Thank you for your purchase, Have a nice day!"
+				else:
+					message "&3[&7Donation Points&3] &4You do not have sufficent funds to buy this."
+		else:
+			message "&3[&7Donation Points&3] &4You do not have permission to use this sign."
+on right click on a sign:
+	if line 1 is "VIP":
+		if player has permission "donationpoints.admin":
+			set line 1 of block to "&3[&7Donation Points&3]"
+			set line 2 of block to "&3VIP"
+			set line 3 of block to "&72500 Points"
+			set line 4 of block to "&fHave a nice day!"
+		else:
+			message "&3[&7Donation Points&3] &4You do not have permission to create a DonationPoints sign."
+on right click on sign:
+	if line 3 is "&72500 Points":
+		if player has permission "donationpoints.use":
+			if line 3 is "&72500 Points":
+				if {balance.%player%} is greater than or equal to 2500:
+					subtract 2500 from {balance.%player%}
+					execute console command "pex user %player% group set VIP"
+					message "&3Thank you for your purchase, Have a nice day!"
+				else:
+					message "&3[&7Donation Points&3] &4You do not have sufficent funds to buy this."
+		else:
+			message "&3[&7Donation Points&3] &4You do not have permission to use this sign."
+on right click on a sign:
+	if line 1 is "Contributor":
+		if player has permission "donationpoints.admin":
+			set line 1 of block to "&3[&7Donation Points&3]"
+			set line 2 of block to "&3Contributor"
+			set line 3 of block to "&72000 Points"
+			set line 4 of block to "&fHave a nice day!"
+		else:
+			message "&3[&7Donation Points&3]&4 You do not have permission to create a DonationPoints sign."
+on right click on sign:
+	if line 3 is "&72000 Points":
+		if player has permission "donationpoints.use":
+			if line 3 is "&72000 Points":
+				if {balance.%player%} is greater than or equal to 3000:
+					subtract 2000 from {balance.%player%}
+					execute console command "pex user %player% group set Contributor"
+					message "&3Thank you for your purchase, Have a nice day!"
+				else:
+					message "&3[&7Donation Points&3] &4You do not have sufficent funds to buy this."
+		else:
+			message "&3[&7Donation Points&3] &4You do not have permission to use this sign."
+on break of sign:
+	if line 3 is "&73000 Points":
+		if player has permission "donationpoints.admin":
+			stop
+		else:
+			cancel event
+			message "&3[&7Donation Points&3]&4 You do not have enough permissions to break a DonationPoints sign!"
+on break of sign:
+	if line 3 is "&72500 Points":
+		if player has permission "donationpoints.admin":
+			stop
+		else:
+			cancel event
+			message "&3[&7Donation Points&3]&4 You do not have enough permissions to break a DonationPoints sign!"
+on break of sign:
+	if line 3 is "&72000 Points":
+		if player has permission "donationpoints.admin":
+			stop
+		else:
+			cancel event
+			message "&3[&7Donation Points&3]&4 You do not have enough permissions to break a DonationPoints sign!"
+
+command /dp [<text>] [<text>] [<text>] [<text>]:
+	trigger:
+		if arg 1 is not set:
+			if arg 2 is not set:
+				if arg 3 is not set:
+					if arg 4 is not set:
+						if player has permission "donationpoints.basic":
+							message "----- &4DonationPoints Commands&f -----"
+							message "&3/dp basic&f - Show basic DonationPoints Commands."
+							message "&3/dp packages&f - Show the DonationPoints Packages Commands."
+							message "&3/dp admin&f - Show the admin DonationPoints Commands."
+							message "&3Version &7BETA 1.0 &3Made by &7Videog4mer&3/&7Viddypoo&3/&7Jacksonnn&3."
+						else:
+							message "&3[&7Donation Points&3] &4You do not have enough permissions to execute this command."
+		if arg 1 is "basic":
+			if arg 2 is not set:
+				if arg 3 is not set:
+					if arg 4 is not set:
+						if player has permission "donationpoints.basic":
+							message "----- &4DonationPoints Basic Commands&f -----"
+							message "&3/dp balance&f - Checks your points balance."
+							message "&3/dp transfer <player> <amount>&f - Transfer Points."
+							message "&3/dp purchase <package>&f- Purchase a Package."
+						else:
+							message "&3[&7Donation Points&3] &4You do not have enough permissions to execute this command."
+		if arg 1 is "packages":
+			if arg 2 is not set:
+				if arg 3 is not set:
+					if arg 4 is not set:
+						if player has permission "donationpoints.packages":
+							message "-----&4DonationPoints Package Commands&f-----"
+							message "&3/dp package info <packageName>&f - Shows package information."
+							message "&3/dp package list&f - List all Packages."
+						else:
+							message "&3[&7Donation Points&3] &4You do not have enough permissions to execute this command."
+		if arg 1 is "admin":
+			if arg 2 is not set:
+				if arg 3 is not set:
+					if arg 4 is not set:
+						if player has permission "donationpoints.admin":
+							message "-----&4DonationPoints Admin Commands&f-----"
+							message "&3/dp give <player> <amount>&f - Give points to a player."
+							message "&3/dp take <player> <amount>&f - Take points from a player."
+							message "&3/dp version&f - Shows the version of DonationPoints you're running."
+						else:
+							message "&3[&7Donation Points&3] &4You do not have enough permissions to execute this command."
+		if arg 1 is "balance":
+			if arg 2 is not set:
+				if arg 3 is not set:
+					if arg 4 is not set:
+						if player has permission "donationpoints.basic":
+							message "&3[&7Donation Points&3]&f Points: %{balance.%player%}%"
+						else:
+							message "&3[&7Donation Points&3] &4You do not have enough permissions to execute this command."
+		if arg 1 is "package":
+			if arg 2 is "info":
+				if arg 3 is "elite":
+					if arg 4 is not set:
+						if player has permission "donationpoints.packages":
+							message "&3The Elite Rank has all permissions of VIP and these:"
+							message "&3/trails"
+							message "&3Deluxe Tardis"
+							message "&3The Tewlfth Doctors tardis"
+							message "&3/top"
+							message "&3/seen"
+							message "&3/mail"
+							message "&3All enchantments for /enchant"
+							message "&3/enchant"
+							message "&3/dis"
+							message "&3/fireball"
+							message "&3/pt"
+							message "&3All Worldedit Commands"
+							message "&3Able to set 10 Homes"
+						else:
+							message "&3[&7Donation Points&3] &4You do not have enough permissions to execute this command."
+		if arg 1 is "package":
+			if arg 2 is "info":
+				if arg 3 is "vip":
+					if arg 4 is not set:
+						if player has permission "donationpoints.packages":
+							message "&3VIP as all of Contributor's permissions and these permissions:"
+							message "&3Color Chat! &(0-9,a-f,l,m,n,o,k)"
+							message "&3/fc VIP"
+							message "&3/skin"
+							message "&3/clearinv"
+							message "&3/clearinventory"
+							message "&3/ci"
+							message "&3/gamemode (0,1,2,3)"
+							message "&3/v"
+							message "&3/pt"
+							message "&3/spawnmob"
+							message "&3/exp"
+							message "&3Able to set 5 Homes"
+							message "&3Archer Bows"
+							message "&3Unlimited Ammo"
+							message "&3No Cooldowns if Any"
+							message "&3A God Arrow"
+							message "&3/undis"
+							message "&3/dis"
+						else:
+							message "&3[&7Donation Points&3] &4You do not have enough permissions to execute this command."
+		if arg 1 is "package":
+			if arg 2 is "info":
+				if arg 3 is "Contributor":
+					if arg 4 is not set:
+						if player has permission "donationpoints.packages":
+							message "&3The rank Contributor has all of the normal rank commands and the following permissions:"
+							message "&3/customenchantments"
+							message "&3ALL Tardis Things"
+							message "&3/nick (With colors and bold and itallic and underline, etc)"
+							message "&3/spawner"
+							message "&3/bigtree"
+							message "&3/ex"
+							message "&3/feed"
+							message "&3/fly"
+							message "&3/god"
+							message "&3/heal"
+							message "&3/jump"
+							message "&3/pet"
+							message "&3/repair"
+							message "&3/tree"
+							message "&3/ascend"
+							message "&3/descend"
+							message "&3/up"
+							message "&3/ceiling"
+							message "&3Disguise as a cow, pig, sheep, chicken, and squid"
+						else:
+							message "&3[&7Donation Points&3] &4You do not have enough permissions to execute this command."
+		if arg 1 is "package":
+			if arg 2 is "list":
+				if arg 3 is not set:
+					if arg 4 is not set:
+						if player has permission "donationpoints.packages":
+							message "-----&4 DonationPoints Package List&f-----"
+							message "&3Elite&f - More info at&7 http://the-hub-mc.buycraft.net/"
+							message "&3VIP&f - More info at&7 http://the-hub-mc.buycraft.net/"
+							message "&3Contributor&f - More info at&7 http://the-hub-mc.buycraft.net/"
+						else:
+							message "&3[&7Donation Points&3] &4You do not have enough permissions to execute this command."
+		if arg 1 is "purchase":
+			if arg 3 is not set:
+				if arg 4 is not set:
+					if player has permission "donationpoints.packages":
+						if arg 2 is "Elite":
+							if {balance.%player%} is greater than or equal to 3000:
+								subtract 3000 from {balance.%player%}
+								execute console command "pex user %player% group set Elite"
+							else:
+								message "&3[&7Donation Points&3]&4 You do not have enough points to purchase this."
+						if arg 2 is "VIP":
+							if {balance.%player%} is greater than or equal to 2500:
+								subtract 2500 from {balance.%player%}
+								execute console command "pex user %player% group set VIP"
+							else:
+								message "&3[&7Donation Points&3]&4 You do not have enough points to purchase this."
+						if arg 2 is "Contributor":
+							if {balance.%player%} is greater than or equal to 2000:
+								subtract 2000 from {balance.%player%}
+								execute console command "pex user %player% group set Contributor"
+							else:
+								message "&3[&7Donation Points&3]&4 You do not have enough points to purchase this."
+		if arg 1 is "version":
+			if arg 2 is not set:
+				if arg 3 is not set:
+					if arg 4 is not set:
+						if player has permission "donationpoints.basic":
+							message "&f-----&4Donation Points Version&f-----"
+							message "&3Plugin Made By:&f Videog4mer/Viddypoo/Jacksonnn"
+							message "&3Plugin Version:&f BETA 1.2"
+							message "&3Contributors:&f DeeJaYKitten"
+							message "&f-----    &4Have a nice day!    &f-----"
+command /dptransfer <player> <integer>:
+	usage: /dptransfer <player> <amount>
+	trigger:
+		if player has permission "donationpoints.basic":
+			if arg 2 is less than or equal to {balance.%player%}:
+				subtract arg 2 from {balance.%player%}
+				message "&3[&7Donation Points&3] &fYou have sent $&c%arg 2% &ato &c%arg 1%"
+				add arg 2 to {balance.%arg 1%}
+				send "&3[&7Donation Points&3] &fYou just received $&c%arg 2% &afrom &c%player%&a!" to arg 1
+			else:
+				message "&3[&7Donation Points&3] &fYou cant afford to send that much!"
+		else:
+			message "&3[&7Donation Points&3] &4You do not have enough permissions to execute this command."
+command /dpgive <player> <integer>:
+	trigger:
+		if player has permission "donationpoints.admin":
+			add arg 2 to {balance.%arg 1%}
+			send "&3[&7Donation Points&3] &a%player% added %arg 2% Points to your balance." to arg 1
+			message "&3[&7Donation Points&3] &aYou sucessfully gave %arg 2% Points to %arg 1%!"
+		else:
+			message "&3[&7Donation Points&3] &4You do not have enough permissions to execute this command."
+command /dptake <player> <integer>:
+	trigger:
+		if player has permission "donationpoints.admin":
+			subtract arg 2 from {balance.%arg 1%}
+			send "&3[&7Donation Points&3] &c%player% took %arg 2% Points away from your points balance." to arg 1
+			message "&3[&7Donation Points&3] &cYou have sucessfully taken %arg 2% Points away from %arg 1%!"
+		else:
+			message "&3[&7Donation Points&3] &4You do not have enough permissions to execute this command."
+command /broadcast <text>:
+	trigger:
+		if player has permission "essentials.broadcast":
+			broadcast "&b[&eThe Hub MC Broadcast&b]&f %arg 1% &b[&eFrom %player%&b]"
+command /bcast <text>:
+	usage: /bcast <text>
+	trigger:
+		if player has permission "essentials.broadcast":
+			broadcast "&b[&eThe Hub MC Broadcast&b]&f %arg 1% &b[&eFrom %player%&b]"
+command /bc <text>:
+	usage: /bc <text>
+	trigger:
+		if player has permission "essentials.broadcast":
+			broadcast "&b[&eThe Hub MC Broadcast&b]&f %arg 1%&b [&eFrom %player%&b]"
+command /colours:
+	trigger:
+		message "&AA &BB &CC &EE &FF &11 &22 &33 &44 &55 &66 &77 &88 &99 &00&f &LLLLL &mMMMM&f &nNNNN&f &oOOOO&f '&kADASD&f <- K"
+command /colors:
+	trigger:
+		message "&AA &BB &CC &EE &FF &11 &22 &33 &44 &55 &66 &77 &88 &99 &00&f &LLLLL &mMMMM&f &nNNNN&f &oOOOO&f '&kADASD&f <- K"
+command /color:
+	trigger:
+		message "&AA &BB &CC &EE &FF &11 &22 &33 &44 &55 &66 &77 &88 &99 &00&f &LLLLL &mMMMM&f &nNNNN&f &oOOOO&f '&kADASD&f <- K"
+command /colour:
+	trigger:
+		message "&AA &BB &CC &EE &FF &11 &22 &33 &44 &55 &66 &77 &88 &99 &00&f &LLLLL &mMMMM&f &nNNNN&f &oOOOO&f '&kADASD&f <- K"
+command /arenas:
+	trigger:
+		if player has permission "warps.arenas":
+			message "&4Arena Rules:"
+			message "&81. &7No Weapons or Armor in arenas."
+			message "&82. &7No Avatar Skills (AS, BB)."
+			message "&83. &7No Potions or effects in arenas."
+			message "&84. &7No Complaining about the loss of items."
+			message "&85. &7No Hacking of any kind."
+			message "&86. &7No exploiting Glitches."
+			message "&87. &7No Griefing arenas."
+			message "&88. &7No commands such as /heal and /god."
+			message "&89. &7No spawn killing"
+			message "&810. &7No going into gamemode in arenas."
+			message "&811. &7No Flight."
+			execute console command "warp ArenaHub %player%"
+command /arena:
+	trigger:
+		if player has permission "warps.arenas":
+			message "&4Arena Rules:"
+			message "&81. &7No Weapons or Armor in arenas."
+			message "&82. &7No Avatar Skills (AS, BB)."
+			message "&83. &7No Potions or effects in arenas."
+			message "&84. &7No Complaining about the loss of items."
+			message "&85. &7No Hacking of any kind."
+			message "&86. &7No exploiting Glitches."
+			message "&87. &7No Griefing arenas."
+			message "&88. &7No commands such as /heal and /god."
+			message "&89. &7No spawn killing"
+			message "&810. &7No going into gamemode in arenas."
+			message "&811. &7No Flight."
+			execute console command "warp ArenaHub %player%"
+command /ranks <text>:
+	trigger:
+		if arg 1 is "Member":
+			if player has permission "ranks.member":
+				message "&f-----&4Server Rankup Ranks&f-----"
+				message "&8[&eMember&8] &a- $0 &f(YOU ARE HERE)"
+				message "&e[&aCitizen&e] &a- $5000"
+				message "&8[&fVeteran&8] &a- $50000"
+				message "&f{&bT&ay&ec&6o&do&cn&f} &a- $500000"
+				message "&8[&6Gov. Official&8] &a- $5000000"
+				message "&1{&3Legend&1} &a- $50000000"
+				message "&f-----&4Server Rankup Ranks&f-----"
+			else:
+				message "&4You do not have sufficent permissions to perform this command."
+		else:
+			if arg 1 is "Citizen":
+				if player has permission "ranks.citizen":
+					message "&f-----&4Server Rankup Ranks&f-----"
+					message "&8[&eMember&8] &a- $0 &f"
+					message "&e[&aCitizen&e] &a- $5000 &f(YOU ARE HERE)"
+					message "&8[&fVeteran&8] &a- $50000"
+					message "&f{&bT&ay&ec&6o&do&cn&f} &a- $500000"
+					message "&8[&6Gov. Official&8] &a- $5000000"
+					message "&1{&3Legend&1} &a- $50000000"
+					message "&f-----&4Server Rankup Ranks&f-----"
+				else:
+					message "&4You do not have sufficent permissions to perform this command."
+			else:
+				if arg 1 is "Veteran":
+					if player has permission "ranks.veteran":
+						message "&f-----&4Server Rankup Ranks&f-----"
+						message "&8[&eMember&8] &a- $0"
+						message "&e[&aCitizen&e] &a- $5000"
+						message "&8[&fVeteran&8] &a- $50000 &f(YOU ARE HERE)"
+						message "&f{&bT&ay&ec&6o&do&cn&f} &a- $500000"
+						message "&8[&6Gov. Official&8] &a- $5000000"
+						message "&1{&3Legend&1} &a- $50000000"
+						message "&f-----&4Server Rankup Ranks&f-----"
+					else:
+						message "&4You do not have sufficent permissions to perform this command."
+				else:
+					if arg 1 is "Tycoon":
+						if player has permission "ranks.tycoon":
+							message "&f-----&4Server Rankup Ranks&f-----"
+							message "&8[&eMember&8] &a- $0"
+							message "&e[&aCitizen&e] &a- $5000"
+							message "&8[&fVeteran&8] &a- $50000"
+							message "&f{&bT&ay&ec&6o&do&cn&f} &a- $500000 &f(YOU ARE HERE)"
+							message "&8[&6Gov. Official&8] &a- $5000000"
+							message "&1{&3Legend&1} &a- $50000000"
+							message "&f-----&4Server Rankup Ranks&f-----"
+						else:
+							message "&4You do not have sufficent permissions to perform this command."
+					else:
+						if arg 1 is "Gov. Official":
+							if player has permission "ranks.governmentofficial":
+								message "&f-----&4Server Rankup Ranks&f-----"
+								message "&8[&eMember&8] &a- $0"
+								message "&e[&aCitizen&e] &a- $5000"
+								message "&8[&fVeteran&8] &a- $50000"
+								message "&f{&bT&ay&ec&6o&do&cn&f} &a- $500000"
+								message "&8[&6Gov. Official&8] &a- $5000000 &f(YOU ARE HERE)"
+								message "&1{&3Legend&1} &a- $50000000"
+								message "&f-----&4Server Rankup Ranks&f-----"
+							else:
+								message "&4You do not have sufficent permissions to perform this command."
+						else:
+							if arg 1 is "Legend":
+								if player has permission "ranks.legend":
+									message "&f-----&4Server Rankup Ranks&f-----"
+									message "&8[&eMember&8] &a- $0"
+									message "&e[&aCitizen&e] &a- $5000"
+									message "&8[&fVeteran&8] &a- $50000"
+									message "&f{&bT&ay&ec&6o&do&cn&f} &a- $500000"
+									message "&8[&6Gov. Official&8] &a- $5000000"
+									message "&1{&3Legend&1} &a- $50000000 &f(YOU ARE HERE)"
+									message "&4There are no more ranks to rankup to."
+									message "&f-----&4Server Rankup Ranks&f-----"
+								else:
+									message "&4You do not have sufficent permissions to perform this command."
+command /test:
+	permission: TDG.test
+	trigger:
+		1.8 spawn 50 of particle heart:0 offset by 1, 1, 1 at player with data 0
+command /sex <player>:
+	permission: TDG.sex
+	trigger:
+		message "&dYou have fucked %arg 1%! I hope they had as much fun as you did <3!"
+		send "&dYou have been fucked by %player%! I hope you had a good time!" to arg 1
+command /kiss <player>:
+	permission: TDG.kiss
+	trigger:
+		message "&dYou have kissed %arg 1%! I hope you had fun!"
+		send "&dYou have been kissed by %player%! I hope you have fun!" to arg 1
+command /cry <player>:
+	permission: TDG.cry
+	trigger:
+		message "&bYou start crying on %arg 1%'s shoulder &f:&b'&f("
+		send "&b%player% starts crying on your shoulders &f:&b'&f(" to arg 1
+command /slap <player>:
+	permission: TDG.slap
+	trigger:
+		message "&4You have slapped %arg 1%"
+		send "&4%player% has slapped you" to arg 1
+		damage arg-1 by 1 heart
+
+on load:
+	register new shaped recipe for 1 Nether Star named "&f&lR&b&la&f&la&b&lv&f&la&b&l'&f&ls &b&lE&f&ls&b&ls&f&le&b&ln&f&lc&b&le" using air, nether star, air, nether star, quartz block, nether star, air, nether star, air
+	register new shaped recipe for 1 Fire Charge named "&8&lV&4&la&8&la&4&lt&8&lu&4&l'&8&ls &4&lE&8&ls&4&ls&8&le&4&ln&8&lc&4&le" using air, nether star, air, nether star, nether brick, nether star, air, nether star, air

@@ -1,0 +1,190 @@
+#Please do not mess with this.#
+#Made by Jacksonnn.#
+variables:
+	probending.%player% = 0
+
+on right click on sign:
+	if line 4 is "Probending Blue!":
+		message "&9Good Luck %player%!"
+		execute console command "setblock -1216 16 480 stained_hardened_clay 11"
+		wait 1 tick
+		execute console command "setblock -1216 16 480 air"
+command /probending [<text>] [<text>] [<text>] [<text>] [<text>]:
+	aliases: /pro,/pb,/pbend,/pbending
+	trigger:
+		if arg-1 is not set:
+			if arg-2 is not set:
+				if arg-3 is not set:
+					if arg-4 is not set:
+						if arg-5 is not set:
+							if player has permission "probending.basic":
+								message "&7----- &cProbending Commands&7 -----"
+								message "&c/probending &7- &9Shows this help page."
+								message "&c/probending team &7-&9 Shows team commands."
+								message "&c/probending admin &7-&9 Shows admin commands."
+								message "&7------&c Made by Jacksonnn &7------"
+							else:
+								message "&7[&cProbending&7]&9 You do not have sufficent permissions for this command"
+		if arg-1 is "team":
+			if arg-2 is not set:
+				if arg-3 is not set:
+					if arg-4 is not set:
+						if arg-5 is not set:
+							if player has permission "probending.team":
+								message "&7----- &cProbending Commands&7 -----"
+								message "&c/probending team new [Name]&7 - &9Create a Probending Team."
+								message "&c/probending team invite [Player]&7 - &9Invite someone to join your team."
+								message "&c/probending team accept&7 - &9Accept an invite to a team."
+								message "&c/probending team decline&7 - &9Decline an invite to a team."
+								message "&c/probending team leave&7 - &9Leave a Probending Team."
+								message "&c/probending team disband&7 - &9Disband your Probending Team."
+								message "&c/probending team info&7 - &9View the information of your team."
+								message "&c/probending team info [Name]&7- &9View the informations of a different team."
+								message "&7------&c Made by Jacksonnn&7 ------"
+			if arg-2 is "new":
+				if arg-3 is not set:
+					message "&7[&cProbending&7] &9Please define a Team Name!"
+				else:
+					if {teams.%arg-3%::*} is set:
+						send "&7[&cProbending&7] &9This team already exists!"
+						stop
+					if {team.%player%} is set:
+						send "&7[&cProbending&7] &9You are already on a team!"
+						send "&7[&cProbending&7] &9Use &b/probending team leave &9to leave your team!"
+					else:
+						message "&7[&cProbending&7] &9Team &b%arg-3%&9 created!" to player
+						set {team.%player%} to arg-3
+						set {team.%player%.leader} to player
+						add arg-3 to {list::*}
+						add player to {teams.%arg-3%::*}
+
+			if arg-2 is "leave":
+				if {team.%player%} is not set:
+					message "&7[&cProbending&7] &9You are not part of a team!"
+					stop
+				if {team.%player%.leader} is set:
+					send "&7[&cProbending&7] &9You can't leave your own team, use &b/probending team disband" to player
+					stop
+				loop {teams.%{team.%player%}%::*}:
+					send "&7[&cProbending&7] &b%player% &9left the team!" to loop-value
+				remove player from {teams.%{team.%player%}%::*}
+				delete {team.%player%}
+
+			if arg-2 is "disband":
+				if {team.%player%} is not set:
+					message "&7[&cProbending&7] &9You are not part of a team!"
+					stop
+				if {team.%player%.leader} is not set:
+					message "&7[&cProbending&7] &9You are not the team leader!"
+					stop
+				send "&7[&cProbending&7] &9Team disbanded!" to player
+				loop {teams.%{team.%player%}%::*}:
+					if loop-value is not player:
+						send "&7[&cProbending&7] &9Your team has been disbaned by the leader!" to loop-value
+						delete {team.%loop-value%}
+				delete {teams.%{team.%player%}%::*}
+				delete {team.%player%.leader}
+				remove {team.%player%} from {list::*}
+				delete {team.%player%}
+
+			if arg-2 is "invite":
+				if arg-3 is set:
+					if {team.%player%} is set:
+						if {team.%player%.leader} is set:
+							player command "pbinvite %arg-3%"
+							stop
+						message "&7[&cProbending&7] &9You are not the team leader!"
+						stop
+					message "&7[&cProbending&7] &9You are not on a team!"
+
+			if arg-2 is "accept":
+				if {team.%player%.pending} is set:
+					message "&7[&cProbending&7] &9You have joined the team!"
+					send "&7[&cProbending&7] &b%player% &9joined the team!" to {team.%player%.pending}
+					set {team.%player%} to {team %player%.pending.name}
+					add player to {teams.%{team %player%.pending.name}%::*}
+					delete {team.%player%.pending}
+					delete {team %player%.pending.name}
+				else:
+					message "&7[&cProbending&7] &9You have no pending requests!"
+
+
+			if arg-2 is "decline":
+				if {team.%player%.pending} is set:
+					send "&7[&cProbending&7] &b%player% &9doesn't want to join the team!" to {clan.%player%.pending}
+					delete {team.%player%.pending}
+					delete {team %player%.pending.name}
+				else:
+					message "&7[&cProbending&7] &9You have no pending requests!"
+
+			if arg-2 is "kick":
+				if {team.%player%} is not set:
+					message "&7[&cProbending&7] &9You are not on a team!"
+					stop
+				if {team.%player%.leader} is not set:
+					message "&7[&cProbending&7] &9You are not the team leader!"
+					stop
+				if arg-3 is not set:
+					message "&7[&cProbending&7] &9Please define an name"
+					stop
+				if arg-3 is player:
+					message "&7[&cProbending&7] &9You can't kick yourself"
+					stop
+				loop {teams.%{team.%player%}%::*}:
+					if loop-value is arg-3:
+						send "&7[&cProbending&7] &cYou got kicked out of the team, &b%{team.%player%}%" to loop-value
+						message "&7[&cProbending&7] &9Kicked &b%arg-3%&9 out of the team"
+						remove loop-value from {teams.%{team.%player%}%::*}
+						delete {team.%loop-value%}
+						stop
+				message "&7[&cProbending&7] &cThis player is not on your team!"
+
+			if arg-2 is "info":
+				if {team.%player%} is not set:
+					message "&7[&cProbending&7] &9You are not on a team!"
+					stop
+				message "&f<-[|=--------------------------------=|]->"
+				message ""
+				message "&7[&cProbending&7] &9Name: &b%{team.%player%}%"
+				message "&7[&cProbending&7] &9Members: &b%{teams.%{team.%player%}%::*}%"
+				message "%{list::*}%"
+				message ""
+				message "&f<-[|=--------------------------------=|]->"
+
+		if arg-1 is "admin":
+			if arg-2 is not set:
+				if arg-3 is not set:
+					if arg-4 is not set:
+						if arg-5 is not set:
+							if player has permission "probending.admin":
+								message "&7----- &cProbending Commands&7 -----"
+								message "&c/probending admin give win [Team] [Amount]&7 - &9Give a team a win point."
+								message "&c/probending admin take win [Team] [Amount]&7 - &9Take a teams win points."
+								message "&c/probending admin match create [Team] [Team]&7 - &9Create a Probending match."
+								message "&c/probending admin match end &7-&9 End the current Probending match."
+								message "&c/probending admin tp [Team] &7-&9 Teleport the team members to the start area."
+								message "&c/probending admin warn [Team] [Reason] &7- &9Warn a team for a reason."
+
+
+
+
+
+
+
+command /pbinvite <player>:
+	trigger:
+		if {team.%arg%} is set:
+			message "&7[&cProbending&7] &9This user is already on a team!"
+			stop
+		if {team.%arg%.pending} is set:
+			message "&7[&cProbending&7] &9This user already has a pending request!"
+			stop
+		set {team.%arg%.pending} to player
+		set {team %arg%.pending.name} to {team.%player%}
+		message "&7[&cProbending&7] &9Team invitation sent to %arg%!"
+		send "&7[&cProbending&7] &b%player% &9invited you to join their team, &b%{team.%player%}%" to arg-1
+		send "&7[&cProbending&7] Type &b/probending team accept &9to join the team" to arg-1
+		send "&7[&cProbending&7] Type &b/probending team decline &9to decline" to arg-1
+		stop
+
+

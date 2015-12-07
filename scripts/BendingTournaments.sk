@@ -1,0 +1,10 @@
+#Tournament Skript made by Jacksonnn#
+# © 2015 The Hub MC #
+command /tournament:
+	trigger:
+		if player has permission "tournaments.basic":
+			message "&7----- &cTournaments &&-----"
+			message "&c/tournament create [Player Count] &7- &4Create a Tournament (Admin only)."
+			message "&c/tournament join &7- &4Join the current tournament."
+			message "&c/tournament"
+			message "&7-- &cMade by Jacksonnn&7 --"
